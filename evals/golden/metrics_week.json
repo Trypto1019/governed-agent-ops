@@ -1,0 +1,193 @@
+{
+ "window": {
+  "from": "2026-09-21",
+  "to": "2026-09-27"
+ },
+ "metrics_daily": [
+  {
+   "day": "2026-09-21",
+   "metric": "leads",
+   "dimension": "",
+   "value": 9,
+   "source": "leads_sensor"
+  },
+  {
+   "day": "2026-09-21",
+   "metric": "leads",
+   "dimension": "tier:excellent",
+   "value": 3,
+   "source": "leads_sensor"
+  },
+  {
+   "day": "2026-09-21",
+   "metric": "llm_cost_usd",
+   "dimension": "",
+   "value": 0.4,
+   "source": "cost_sensor"
+  },
+  {
+   "day": "2026-09-22",
+   "metric": "leads",
+   "dimension": "",
+   "value": 11,
+   "source": "leads_sensor"
+  },
+  {
+   "day": "2026-09-22",
+   "metric": "leads",
+   "dimension": "tier:excellent",
+   "value": 2,
+   "source": "leads_sensor"
+  },
+  {
+   "day": "2026-09-22",
+   "metric": "llm_cost_usd",
+   "dimension": "",
+   "value": 0.45,
+   "source": "cost_sensor"
+  },
+  {
+   "day": "2026-09-23",
+   "metric": "leads",
+   "dimension": "",
+   "value": 10,
+   "source": "leads_sensor"
+  },
+  {
+   "day": "2026-09-23",
+   "metric": "leads",
+   "dimension": "tier:excellent",
+   "value": 3,
+   "source": "leads_sensor"
+  },
+  {
+   "day": "2026-09-23",
+   "metric": "llm_cost_usd",
+   "dimension": "",
+   "value": 0.5,
+   "source": "cost_sensor"
+  },
+  {
+   "day": "2026-09-24",
+   "metric": "leads",
+   "dimension": "tier:excellent",
+   "value": 2,
+   "source": "leads_sensor"
+  },
+  {
+   "day": "2026-09-24",
+   "metric": "llm_cost_usd",
+   "dimension": "",
+   "value": 0.55,
+   "source": "cost_sensor"
+  },
+  {
+   "day": "2026-09-25",
+   "metric": "leads",
+   "dimension": "tier:excellent",
+   "value": 1,
+   "source": "leads_sensor"
+  },
+  {
+   "day": "2026-09-25",
+   "metric": "llm_cost_usd",
+   "dimension": "",
+   "value": 0.6,
+   "source": "cost_sensor"
+  },
+  {
+   "day": "2026-09-26",
+   "metric": "leads",
+   "dimension": "",
+   "value": 12,
+   "source": "leads_sensor"
+  },
+  {
+   "day": "2026-09-26",
+   "metric": "leads",
+   "dimension": "tier:excellent",
+   "value": 0,
+   "source": "leads_sensor"
+  },
+  {
+   "day": "2026-09-26",
+   "metric": "llm_cost_usd",
+   "dimension": "",
+   "value": 0.65,
+   "source": "cost_sensor"
+  },
+  {
+   "day": "2026-09-27",
+   "metric": "leads",
+   "dimension": "",
+   "value": 8,
+   "source": "leads_sensor"
+  },
+  {
+   "day": "2026-09-27",
+   "metric": "leads",
+   "dimension": "tier:excellent",
+   "value": 0,
+   "source": "leads_sensor"
+  },
+  {
+   "day": "2026-09-27",
+   "metric": "llm_cost_usd",
+   "dimension": "",
+   "value": 0.7,
+   "source": "cost_sensor"
+  }
+ ],
+ "verifier_results": [
+  {
+   "ran_at": "2026-09-21T06:00:00Z",
+   "check_id": "finance.rollup_fresh",
+   "passed": true
+  },
+  {
+   "ran_at": "2026-09-22T06:00:00Z",
+   "check_id": "finance.rollup_fresh",
+   "passed": true
+  },
+  {
+   "ran_at": "2026-09-23T06:00:00Z",
+   "check_id": "finance.rollup_fresh",
+   "passed": true
+  },
+  {
+   "ran_at": "2026-09-24T06:00:00Z",
+   "check_id": "finance.rollup_fresh",
+   "passed": true
+  },
+  {
+   "ran_at": "2026-09-25T06:00:00Z",
+   "check_id": "finance.rollup_fresh",
+   "passed": true
+  },
+  {
+   "ran_at": "2026-09-26T06:00:00Z",
+   "check_id": "finance.rollup_fresh",
+   "passed": true
+  },
+  {
+   "ran_at": "2026-09-27T06:00:00Z",
+   "check_id": "finance.rollup_fresh",
+   "passed": true
+  }
+ ],
+ "events": [
+  {
+   "ts": "2026-09-26T09:00:00Z",
+   "agent": "dispatcher",
+   "action": "suspend_job",
+   "target": "seo.scan_pages",
+   "result": {
+    "reason": "2 consecutive non-ok runs"
+   }
+  }
+ ],
+ "_planted": {
+  "gap": "leads missing for 2026-09-24 and 2026-09-25",
+  "anomaly": "tier:excellent leads fall to 0"
+ }
+}

@@ -1,0 +1,11 @@
+{
+  "role": "compliance",
+  "tier": "Gate",
+  "scheduled": true,
+  "model": "vendor-a/large",
+  "fallback_model": "vendor-b/flash",
+  "max_turns": 12,
+  "tools": [
+    "memory_write"
+  ]
+}

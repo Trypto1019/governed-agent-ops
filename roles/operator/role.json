@@ -1,0 +1,14 @@
+{
+  "role": "operator",
+  "tier": "S (orchestrator)",
+  "scheduled": true,
+  "model": "vendor-a/frontier",
+  "fallback_model": "vendor-b/frontier",
+  "max_turns": 20,
+  "tools": [
+    "query_view",
+    "metrics_read",
+    "approvals_create",
+    "memory_write"
+  ]
+}

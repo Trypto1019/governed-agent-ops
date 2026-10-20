@@ -1,0 +1,110 @@
+[
+ {
+  "id": "c01",
+  "type": "page",
+  "violation": null,
+  "body": "<h1>Personal loans in Maple Falls</h1><p>Offers from 7.9% APR to 35.9% APR. Rates vary and depend on creditworthiness.</p>"
+ },
+ {
+  "id": "c02",
+  "type": "page",
+  "violation": "fabricated_rating",
+  "body": "<script type=\"application/ld+json\">{\"@type\": \"FinancialService\", \"aggregateRating\": {\"ratingValue\": \"4.8\", \"reviewCount\": \"1200\"}}</script>"
+ },
+ {
+  "id": "c03",
+  "type": "page",
+  "violation": "placeholder_href",
+  "body": "<p>Check your score first: <a href=\"[partner link]\">start here</a></p>"
+ },
+ {
+  "id": "c04",
+  "type": "page",
+  "violation": "dead_href_hash",
+  "body": "<a href=\"#\" class=\"btn-offer\">See my offers</a>"
+ },
+ {
+  "id": "c05",
+  "type": "email",
+  "violation": "missing_cta_token",
+  "body": "Hi Alex, finish your application here: <a href=\"https://acme-lending.example.com/resume\">resume</a>"
+ },
+ {
+  "id": "c06",
+  "type": "email",
+  "violation": null,
+  "body": "Hi Alex, pick up where you left off: {cta_url}"
+ },
+ {
+  "id": "c07",
+  "type": "page",
+  "violation": "affiliate_without_sponsored",
+  "body": "<a href=\"https://partner.example.org/apply\">Apply with our partner</a>"
+ },
+ {
+  "id": "c08",
+  "type": "page",
+  "violation": null,
+  "body": "<p>Disclosure: we may earn a commission from partners.</p><a rel=\"sponsored\" href=\"https://partner.example.org/apply\">Apply</a>"
+ },
+ {
+  "id": "c09",
+  "type": "form",
+  "violation": "form_without_tcpa_consent",
+  "body": "<form><input name=\"email\"><button>Get my rate</button></form>"
+ },
+ {
+  "id": "c10",
+  "type": "form",
+  "violation": null,
+  "body": "<form><input name=\"email\"><label><input type=\"checkbox\" required> I consent to receive calls and texts and agree to the terms.</label></form>"
+ },
+ {
+  "id": "c11",
+  "type": "page",
+  "violation": "apr_without_disclosure",
+  "body": "<p>Loans from 5.99% APR. Apply in minutes!</p>"
+ },
+ {
+  "id": "c12",
+  "type": "page",
+  "violation": "guaranteed_approval_claim",
+  "body": "<h2>Guaranteed approval for every applicant</h2>"
+ },
+ {
+  "id": "c13",
+  "type": "email",
+  "violation": "bulk_send_without_approval",
+  "body": "Send step 3 to 450 recipients today. {cta_url}"
+ },
+ {
+  "id": "c14",
+  "type": "email",
+  "violation": null,
+  "body": "Send step 3 to 450 recipients today (approval #12). {cta_url}"
+ },
+ {
+  "id": "c15",
+  "type": "page",
+  "violation": "named_lender_claim",
+  "body": "<p>Globex Lending approves more borrowers than any other lender in the state.</p>"
+ },
+ {
+  "id": "c16",
+  "type": "page",
+  "violation": "numeric_claim_without_citation",
+  "body": "<p>79% of credit reports have errors, so check yours.</p>"
+ },
+ {
+  "id": "c17",
+  "type": "page",
+  "violation": null,
+  "body": "<p>Source: Acme Lending 2026 applicant survey. 41% of borrowers compared three offers.</p>"
+ },
+ {
+  "id": "c18",
+  "type": "page",
+  "violation": null,
+  "body": "<h1>How pre-qualification works</h1><p>A soft check does not affect your credit score.</p>"
+ }
+]

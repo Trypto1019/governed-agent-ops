@@ -1,0 +1,12 @@
+{
+  "role": "writer",
+  "tier": "A",
+  "scheduled": false,
+  "model": "vendor-a/large",
+  "fallback_model": "vendor-b/flash",
+  "max_turns": 15,
+  "tools": [
+    "approvals_create",
+    "memory_write"
+  ]
+}

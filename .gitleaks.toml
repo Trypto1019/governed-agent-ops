@@ -1,0 +1,8 @@
+title = "governed-agent-ops gitleaks config"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Local demo output is git-ignored and never committed"
+paths = ['''var/''']

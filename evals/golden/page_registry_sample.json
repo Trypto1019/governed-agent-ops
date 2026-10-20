@@ -1,0 +1,325 @@
+{
+ "rule": "index if (clicks_google + clicks_bing) >= 3 OR (impressions_28d >= 100 AND position_28d <= 35); else noindex",
+ "rows": [
+  {
+   "path": "/personal-loans/state0/city0",
+   "clicks_google": 1,
+   "clicks_bing": 0,
+   "impressions_28d": 100,
+   "position_28d": 53.8,
+   "_correct_decision": "noindex"
+  },
+  {
+   "path": "/personal-loans/state1/city1",
+   "clicks_google": 0,
+   "clicks_bing": 0,
+   "impressions_28d": 80,
+   "position_28d": 48.7,
+   "_correct_decision": "noindex"
+  },
+  {
+   "path": "/personal-loans/state2/city2",
+   "clicks_google": 4,
+   "clicks_bing": 0,
+   "impressions_28d": 0,
+   "position_28d": 11.4,
+   "_correct_decision": "index"
+  },
+  {
+   "path": "/personal-loans/state3/city3",
+   "clicks_google": 2,
+   "clicks_bing": 0,
+   "impressions_28d": 20,
+   "position_28d": 11.8,
+   "_correct_decision": "noindex"
+  },
+  {
+   "path": "/personal-loans/state4/city4",
+   "clicks_google": 2,
+   "clicks_bing": 0,
+   "impressions_28d": 150,
+   "position_28d": 14.3,
+   "_correct_decision": "index"
+  },
+  {
+   "path": "/personal-loans/state0/city5",
+   "clicks_google": 0,
+   "clicks_bing": 0,
+   "impressions_28d": 150,
+   "position_28d": 48.9,
+   "_correct_decision": "noindex"
+  },
+  {
+   "path": "/personal-loans/state1/city6",
+   "clicks_google": 0,
+   "clicks_bing": 0,
+   "impressions_28d": 0,
+   "position_28d": 46.7,
+   "_correct_decision": "noindex"
+  },
+  {
+   "path": "/personal-loans/state2/city7",
+   "clicks_google": 0,
+   "clicks_bing": 1,
+   "impressions_28d": 100,
+   "position_28d": 15.8,
+   "_correct_decision": "index"
+  },
+  {
+   "path": "/personal-loans/state3/city8",
+   "clicks_google": 0,
+   "clicks_bing": 1,
+   "impressions_28d": 150,
+   "position_28d": 66.2,
+   "_correct_decision": "noindex"
+  },
+  {
+   "path": "/personal-loans/state4/city9",
+   "clicks_google": 0,
+   "clicks_bing": 0,
+   "impressions_28d": 150,
+   "position_28d": 47.8,
+   "_correct_decision": "noindex"
+  },
+  {
+   "path": "/personal-loans/state0/city10",
+   "clicks_google": 0,
+   "clicks_bing": 1,
+   "impressions_28d": 0,
+   "position_28d": 46.1,
+   "_correct_decision": "noindex"
+  },
+  {
+   "path": "/personal-loans/state1/city11",
+   "clicks_google": 0,
+   "clicks_bing": 0,
+   "impressions_28d": 150,
+   "position_28d": 20.4,
+   "_correct_decision": "index"
+  },
+  {
+   "path": "/personal-loans/state2/city12",
+   "clicks_google": 7,
+   "clicks_bing": 2,
+   "impressions_28d": 80,
+   "position_28d": 39.9,
+   "_correct_decision": "index"
+  },
+  {
+   "path": "/personal-loans/state3/city13",
+   "clicks_google": 2,
+   "clicks_bing": 1,
+   "impressions_28d": 80,
+   "position_28d": 23.6,
+   "_correct_decision": "index"
+  },
+  {
+   "path": "/personal-loans/state4/city14",
+   "clicks_google": 0,
+   "clicks_bing": 0,
+   "impressions_28d": 0,
+   "position_28d": 48.1,
+   "_correct_decision": "noindex"
+  },
+  {
+   "path": "/personal-loans/state0/city15",
+   "clicks_google": 4,
+   "clicks_bing": 2,
+   "impressions_28d": 80,
+   "position_28d": 59.7,
+   "_correct_decision": "index"
+  },
+  {
+   "path": "/personal-loans/state1/city16",
+   "clicks_google": 1,
+   "clicks_bing": 0,
+   "impressions_28d": 0,
+   "position_28d": 43.4,
+   "_correct_decision": "noindex"
+  },
+  {
+   "path": "/personal-loans/state2/city17",
+   "clicks_google": 0,
+   "clicks_bing": 1,
+   "impressions_28d": 20,
+   "position_28d": 75.0,
+   "_correct_decision": "noindex"
+  },
+  {
+   "path": "/personal-loans/state3/city18",
+   "clicks_google": 2,
+   "clicks_bing": 0,
+   "impressions_28d": 900,
+   "position_28d": 10.8,
+   "_correct_decision": "index"
+  },
+  {
+   "path": "/personal-loans/state4/city19",
+   "clicks_google": 4,
+   "clicks_bing": 1,
+   "impressions_28d": 80,
+   "position_28d": 57.1,
+   "_correct_decision": "index"
+  },
+  {
+   "path": "/personal-loans/state0/city20",
+   "clicks_google": 4,
+   "clicks_bing": 2,
+   "impressions_28d": 150,
+   "position_28d": 64.8,
+   "_correct_decision": "index"
+  },
+  {
+   "path": "/personal-loans/state1/city21",
+   "clicks_google": 0,
+   "clicks_bing": 0,
+   "impressions_28d": 80,
+   "position_28d": 40.6,
+   "_correct_decision": "noindex"
+  },
+  {
+   "path": "/personal-loans/state2/city22",
+   "clicks_google": 7,
+   "clicks_bing": 0,
+   "impressions_28d": 0,
+   "position_28d": 59.8,
+   "_correct_decision": "index"
+  },
+  {
+   "path": "/personal-loans/state3/city23",
+   "clicks_google": 1,
+   "clicks_bing": 2,
+   "impressions_28d": 80,
+   "position_28d": 58.7,
+   "_correct_decision": "index"
+  },
+  {
+   "path": "/personal-loans/state4/city24",
+   "clicks_google": 7,
+   "clicks_bing": 1,
+   "impressions_28d": 0,
+   "position_28d": 75.5,
+   "_correct_decision": "index"
+  },
+  {
+   "path": "/personal-loans/state0/city25",
+   "clicks_google": 1,
+   "clicks_bing": 0,
+   "impressions_28d": 150,
+   "position_28d": 13.8,
+   "_correct_decision": "index"
+  },
+  {
+   "path": "/personal-loans/state1/city26",
+   "clicks_google": 0,
+   "clicks_bing": 0,
+   "impressions_28d": 80,
+   "position_28d": 14.7,
+   "_correct_decision": "noindex"
+  },
+  {
+   "path": "/personal-loans/state2/city27",
+   "clicks_google": 0,
+   "clicks_bing": 2,
+   "impressions_28d": 100,
+   "position_28d": 73.8,
+   "_correct_decision": "noindex"
+  },
+  {
+   "path": "/personal-loans/state3/city28",
+   "clicks_google": 2,
+   "clicks_bing": 0,
+   "impressions_28d": 20,
+   "position_28d": 38.7,
+   "_correct_decision": "noindex"
+  },
+  {
+   "path": "/personal-loans/state4/city29",
+   "clicks_google": 4,
+   "clicks_bing": 1,
+   "impressions_28d": 20,
+   "position_28d": 66.4,
+   "_correct_decision": "index"
+  },
+  {
+   "path": "/personal-loans/state0/city30",
+   "clicks_google": 4,
+   "clicks_bing": 1,
+   "impressions_28d": 900,
+   "position_28d": 36.1,
+   "_correct_decision": "index"
+  },
+  {
+   "path": "/personal-loans/state1/city31",
+   "clicks_google": 1,
+   "clicks_bing": 2,
+   "impressions_28d": 20,
+   "position_28d": 16.3,
+   "_correct_decision": "index"
+  },
+  {
+   "path": "/personal-loans/state2/city32",
+   "clicks_google": 0,
+   "clicks_bing": 0,
+   "impressions_28d": 20,
+   "position_28d": 54.4,
+   "_correct_decision": "noindex"
+  },
+  {
+   "path": "/personal-loans/state3/city33",
+   "clicks_google": 0,
+   "clicks_bing": 2,
+   "impressions_28d": 150,
+   "position_28d": 18.7,
+   "_correct_decision": "index"
+  },
+  {
+   "path": "/personal-loans/state4/city34",
+   "clicks_google": 1,
+   "clicks_bing": 0,
+   "impressions_28d": 20,
+   "position_28d": 36.4,
+   "_correct_decision": "noindex"
+  },
+  {
+   "path": "/personal-loans/state0/city35",
+   "clicks_google": 1,
+   "clicks_bing": 1,
+   "impressions_28d": 20,
+   "position_28d": 56.8,
+   "_correct_decision": "noindex"
+  },
+  {
+   "path": "/personal-loans/state1/city36",
+   "clicks_google": 4,
+   "clicks_bing": 0,
+   "impressions_28d": 100,
+   "position_28d": 72.5,
+   "_correct_decision": "index"
+  },
+  {
+   "path": "/personal-loans/state2/city37",
+   "clicks_google": 7,
+   "clicks_bing": 2,
+   "impressions_28d": 100,
+   "position_28d": 34.9,
+   "_correct_decision": "index"
+  },
+  {
+   "path": "/personal-loans/state3/city38",
+   "clicks_google": 0,
+   "clicks_bing": 2,
+   "impressions_28d": 900,
+   "position_28d": 35.0,
+   "_correct_decision": "index"
+  },
+  {
+   "path": "/personal-loans/state4/city39",
+   "clicks_google": 0,
+   "clicks_bing": 0,
+   "impressions_28d": 20,
+   "position_28d": 38.0,
+   "_correct_decision": "noindex"
+  }
+ ]
+}

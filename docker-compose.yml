@@ -1,0 +1,16 @@
+# Optional: a local Postgres with the production DDL applied.
+#   docker compose up -d
+#   pip install "psycopg[binary]"
+#   DATABASE_URL=postgresql://<user>:<password>@localhost:5432/governed_ops python -m verifier.verify --dry-run
+# The offline demo (`make demo`) does not need this; it uses SQLite.
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: governed_ops
+      POSTGRES_USER: ops
+      POSTGRES_PASSWORD: ops-local-only
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./schema/ddl.sql:/docker-entrypoint-initdb.d/01-ddl.sql:ro

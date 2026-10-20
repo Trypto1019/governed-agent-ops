@@ -1,0 +1,12 @@
+{
+  "role": "authority",
+  "tier": "A",
+  "scheduled": false,
+  "model": "vendor-a/large",
+  "fallback_model": "vendor-b/flash",
+  "max_turns": 15,
+  "tools": [
+    "metrics_read",
+    "approvals_create"
+  ]
+}

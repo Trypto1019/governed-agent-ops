@@ -1,0 +1,12 @@
+{
+  "role": "paid",
+  "tier": "A",
+  "scheduled": true,
+  "model": "vendor-a/large",
+  "fallback_model": "vendor-b/flash",
+  "max_turns": 12,
+  "tools": [
+    "metrics_read",
+    "approvals_create"
+  ]
+}

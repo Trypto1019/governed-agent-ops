@@ -1,0 +1,116 @@
+# Compliance rules as DATA, versioned. Human-written; counsel should review
+# this file, not the code. Deterministic rules run first and handle most
+# artifacts; only `check: llm` rules reach a model, and then with the artifact
+# text alone: no tools, no database, no PII.
+#
+# Each rule should trace to a real failure. The rationales below are
+# generalised from incidents in a production lead-generation system.
+#
+# Supported keys: id, scope (page|email|form|schema), check (regex|absent|custom|llm),
+# pattern, handler, prompt, severity (block|warn), rationale.
+version: "2026-10-01.1"
+rules:
+  - id: fabricated_rating
+    scope: [page, schema]
+    check: regex
+    pattern: 'aggregateRating|"reviewCount"|"ratingValue"'
+    severity: block
+    rationale: >
+      Star ratings with no underlying first-party reviews are a structured-data
+      spam violation and an FTC endorsement problem. Generated ratings were
+      found and remediated in a past system; this rule makes a repeat
+      impossible to ship.
+
+  - id: placeholder_href
+    scope: [page, email]
+    check: regex
+    pattern: 'href="\[|href=''\['
+    severity: block
+    rationale: >
+      A bracketed placeholder shipped as a literal href. The browser resolves
+      it as a relative URL, so every click 404s and nothing alerts.
+
+  - id: dead_href_hash
+    scope: [page]
+    check: regex
+    pattern: 'href="#"[^>]*(offer|cta|btn)'
+    severity: block
+    rationale: >
+      href="#" on a call to action scrolls to the top and does nothing. It
+      leaves no 404 in the logs, so nothing notices.
+
+  - id: missing_cta_token
+    scope: [email]
+    check: absent
+    pattern: '\{cta_url\}'
+    severity: block
+    rationale: >
+      Email bodies with hardcoded links and no {cta_url} token cannot carry the
+      per-lead resume link, so the most important link is never sent.
+
+  - id: affiliate_without_sponsored
+    scope: [page]
+    check: custom
+    handler: affiliate_needs_sponsored
+    severity: block
+    rationale: >
+      Paid outbound links need rel="sponsored" and a visible disclosure
+      (FTC disclosure rules; search-engine link policies).
+
+  - id: form_without_tcpa_consent
+    scope: [form]
+    check: absent
+    pattern: '(?i)(consent|agree).{0,120}(call|text|sms|terms)'
+    severity: block
+    rationale: >
+      TCPA requires prior express written consent before calls or texts.
+
+  - id: apr_without_disclosure
+    scope: [page]
+    check: custom
+    handler: apr_needs_disclosure
+    severity: block
+    rationale: >
+      Advertising a rate triggers TILA / Regulation Z disclosure requirements.
+
+  - id: guaranteed_approval_claim
+    scope: [page, email]
+    check: regex
+    pattern: '(?i)\bguarantee(d|s)?\s+(approval|to be approved|loan)'
+    severity: block
+    rationale: >
+      A lead-generation site cannot guarantee a lender's credit decision; the
+      claim is deceptive under UDAP/UDAAP standards.
+
+  - id: bulk_send_without_approval
+    scope: [email]
+    check: custom
+    handler: bulk_needs_approval
+    severity: block
+    rationale: >
+      Any send above 100 recipients needs an approvals row. Prevents an agent
+      mailing a whole list unilaterally.
+
+  - id: named_lender_claim
+    scope: [page, email]
+    check: llm
+    severity: block
+    prompt: >
+      Does this artifact make a comparative or evaluative claim about a NAMED
+      third-party lender or brand (for example "Lender X approves more
+      borrowers than anyone")? Answer only about this question.
+    rationale: >
+      Comparative claims about named lenders are a legal exposure and require
+      Tier-2 approval.
+
+  - id: numeric_claim_without_citation
+    scope: [page, email]
+    check: llm
+    severity: block
+    prompt: >
+      Does this artifact state a STATISTIC ABOUT THE WORLD (for example "79% of
+      credit reports have errors") without citing a source or marking it as
+      our own data? Answer false for APRs, rate ranges, fees, loan amounts,
+      dates, and numbers describing the reader's own inputs.
+    rationale: >
+      An unsourced statistic is a fabricated rating in prose form.

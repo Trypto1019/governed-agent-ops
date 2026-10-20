@@ -1,0 +1,42 @@
+[
+ {
+  "city": "Maple Falls",
+  "state": "OH",
+  "anchor": "personal loans in Maple Falls",
+  "thin": false,
+  "facts": [
+   "Maple Falls has 3 credit unions within city limits (illustrative).",
+   "Median household income: $58,400 (illustrative).",
+   "The city small-loan ordinance caps origination fees at 5% (illustrative)."
+  ]
+ },
+ {
+  "city": "Cedar Point",
+  "state": "TX",
+  "anchor": "bad credit loans in Cedar Point",
+  "thin": false,
+  "facts": [
+   "Cedar Point has 2 community banks (illustrative).",
+   "Population: 41,900 (illustrative).",
+   "Average commute: 24 minutes (illustrative)."
+  ]
+ },
+ {
+  "city": "Riverbend",
+  "state": "GA",
+  "anchor": "installment loans in Riverbend",
+  "thin": true,
+  "facts": [
+   "Riverbend is in Pine County (illustrative)."
+  ]
+ },
+ {
+  "city": "Lakeview Heights",
+  "state": "AZ",
+  "anchor": "loans in Lakeview Heights",
+  "thin": true,
+  "facts": [
+   "Lakeview Heights has 1 credit union branch (illustrative)."
+  ]
+ }
+]

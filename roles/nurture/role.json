@@ -1,0 +1,13 @@
+{
+  "role": "nurture",
+  "tier": "B",
+  "scheduled": false,
+  "model": "vendor-b/flash-lite",
+  "fallback_model": "vendor-c/flash",
+  "max_turns": 12,
+  "tools": [
+    "metrics_read",
+    "approvals_create",
+    "memory_write"
+  ]
+}
